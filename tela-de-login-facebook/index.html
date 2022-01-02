@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - entre ou cadastre-se</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <img src="flogo.png">
+            </div><!--logo-->
+            <form method="post" class="form-login">
+                <div class="form-element">
+                    <p>E-mail ou Telefone:</p>
+                    <input type="email" />
+                </div><!--form-element-->
+                <div class="form-element">
+                <p>Senha</p>
+                <input type="password" />
+                </div><!--form-element-->
+                <div class="form-element">
+                    <input type="submit" name="acao" value="Entrar" />
+                </div><!--form-element-->
+            </form><!--form-login-->
+            <div class="clear"></div>
+        </div><!--center-->
+    </header>
+    <section class="main">
+        <div class="center">
+            <div class="img-pessoas">
+                <h3>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h3>
+                <img src="img1.png"/>
+            </div><!--img-pessoas-->
+
+            <div class="abrir-conta">
+                <h2>Abra sua conta</h2>
+                <h3>É gratuito e sempre será.</h3>
+
+                <form class="criar-conta">
+                    <div class="w50">
+                        <input placeholder="Nome" type="text">
+                    </div><!--w50-->
+
+                    <div class="w50">
+                        <input placeholder="Sobrenome" type="text">
+                    </div><!--w50-->
+
+                    <div class="w100">
+                        <input placeholder="E-mail" type="email">
+                    </div><!--w100-->
+
+                    <div class="w100">
+                        <input placeholder="Senha" type="password">
+                    </div><!--w100-->
+
+                    <div class="w100">
+                        <h2>Data de Nascimento:</h2>
+                        <select name="nascimento-dia" class="nascimento">
+                            <?php
+                                for($i = 1; $i <= 31; $i++){
+                            ?>
+                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                            <?php } ?>
+                        </select><!--dia-->
+                        <select name="nascimento-mes" class="nascimento">
+                            <option value="1">Janeiro</option>
+                            <option value="2">Fevereiro</option>
+                            <option value="3">Março</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Maio</option>
+                            <option value="6">Junho</option>
+                            <option value="7">Julho</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Setembro</option>
+                            <option value="12">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select><!--mês-->
+                        <select name="nascimento-ano" class="nascimento">
+                            <?php
+                                for($i = 1960; $i <= 2021; $i++){
+                            ?>
+                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                            <?php } ?>
+                        </select><!--ano-->
+                        <div class="clear"></div>
+                    </div><!--w100-->
+
+                    <div class="w100">
+                    <div class="input-radio">
+                        <input type="radio" name="sexo" value="masculino">
+                        <h2>Masculino</h2>
+                    </div><!--input-radio-->
+                    <div class="input-radio">
+                        <input type="radio" name="sexo" value="feminino">
+                        <h2>Feminino</h2>
+                    </div><!--input-radio-->
+                    <div class="clear"></div>
+                    </div><!--w100-->
+
+                    <div class="w100">
+                        <input type="submit" name="acao" value="Cadastre-se!">
+                    </div><!--w100-->
+                </form><!--criar-conta-->
+            </div><!--abrir-conta-->
+            <div class="clear"></div>
+        </div><!--center-->
+    </section><!--main-->
+
+    <section class="linguas">
+        <div class="center">
+            <a class="selected-lingua" href="">Português (BR)</a>
+            <a class="#" href="">English (US)</a>
+            <a class="#" href="">Español</a>
+            <a class="#" href="">Français (France)</a>
+            <a class="#" href="">Italiano</a>
+            <a class="#" href="">Deutsch</a>
+            <a class="#" href="">العربية</a>
+            <a class="#" href="">हिन्दी</a>
+            <a class="#" href="">中文(简体)</a>
+            <a class="#" href="">日本語</a>
+            <button class="+" name="mostrar mais idiomais" value="">+</button>
+        </div><!--center-->
+    </section><!--linguas-->
+
+    <section class="rodape">
+        <div class="center">
+            <a class="#" href="">Cadastre-se</a>
+            <a class="#" href="">Entrar</a>
+            <a class="#" href="">Messenger</a>
+            <a class="#" href="">Facebook Lite</a>
+            <a class="#" href="">Watch</a>
+            <a class="#" href="">Pessoas</a>
+            <a class="#" href="">Páginas</a>
+            <a class="#" href="">Categorias de Página</a>
+            <a class="#" href="">Locais</a>
+            <a class="#" href="">Jogos</a>
+            <a class="#" href="">Locais</a>
+            <a class="#" href="">Marketplace</a>
+            <a class="#" href="">Facebook Pay</a>
+            <a class="#" href="">Grupos</a>
+            <a class="#" href="">Vagas de emprego</a>
+            <a class="#" href="">Oculus</a>
+            <a class="#" href="">Portal</a>
+            <a class="#" href="">Instagram</a>
+            <a class="#" href="">Local</a>
+            <a class="#" href="">Campanhas de arrecadação de fundos</a>
+            <a class="#" href="">Serviços</a>
+            <a class="#" href="">Central de Informaçoes de Votação</a>
+            <a class="#" href="">Sobre</a>
+            <a class="#" href="">Criar anúncio</a>
+            <a class="#" href="">Criar Página</a>
+            <a class="#" href="">Desenvolvedores</a>
+            <a class="#" href="">Carreiras</a>
+            <a class="#" href="">Privacidade</a>
+            <a class="#" href="">Cookies</a>
+            <a class="#" href="">Escolhas para anúncios</a>
+            <a class="#" href="">Termos</a>
+            <a class="#" href="">Ajuda</a>
+        </div><!--center-1-->
+    </section><!--rodape-->
+
+    <section class="rodape-2">
+        <h4> Facebook® 2021</h4>
+    </section><!--rodape-2-->
+</body>
+</html>
